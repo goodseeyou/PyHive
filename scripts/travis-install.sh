@@ -2,8 +2,8 @@
 
 source /etc/lsb-release
 
-echo "deb [arch=amd64] https://archive.cloudera.com/${CDH}/ubuntu/${DISTRIB_CODENAME}/amd64/cdh ${DISTRIB_CODENAME}-cdh${CDH_VERSION} contrib
-deb-src https://archive.cloudera.com/${CDH}/ubuntu/${DISTRIB_CODENAME}/amd64/cdh ${DISTRIB_CODENAME}-cdh${CDH_VERSION} contrib" | sudo tee /etc/apt/sources.list.d/cloudera.list
+# echo "deb [arch=amd64] https://archive.cloudera.com/${CDH}/ubuntu/${DISTRIB_CODENAME}/amd64/cdh ${DISTRIB_CODENAME}-cdh${CDH_VERSION} contrib
+# deb-src https://archive.cloudera.com/${CDH}/ubuntu/${DISTRIB_CODENAME}/amd64/cdh ${DISTRIB_CODENAME}-cdh${CDH_VERSION} contrib" | sudo tee /etc/apt/sources.list.d/cloudera.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 327574EE02A818DD
 sudo apt-get -q update
 
